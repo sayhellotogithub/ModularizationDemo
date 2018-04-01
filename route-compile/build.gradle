@@ -1,0 +1,14 @@
+apply plugin: 'java-library'
+//implementation 'com.squareup:javapoet:1.7.0'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.squareup:javapoet:1.7.0'
+    implementation 'com.google.auto.service:auto-service:1.0-rc2'
+    implementation project(':route-annotation')
+}
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
