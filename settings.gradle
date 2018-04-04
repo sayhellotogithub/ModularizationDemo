@@ -1,1 +1,1 @@
-include ':app', ':moduleone', ':moduletwo',':route-compile', ':route-core', ':testproject', ':base', ':route-annotation'
+include ':app', ':moduleone', ':moduletwo',':route-compile', ':route-core', ':testproject', ':base', ':route-annotation', ':commonlib'
